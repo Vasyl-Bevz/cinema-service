@@ -1,52 +1,1 @@
-# Cinema-service
-
-
-### Overview
-Here is the simple project to learn of implementation of basic hibernate annotation in jav project.
-
-### Project description
-In the project uses hibernate to create Entity, store and manipulate them. Shown all types of relations of Entity and DATA BASE. 
-
-Project has structure:
-
-Entity
-- Movie
-- Cinema
-- MovieSession
-- Ticket
-- User
-- Shopping cart
-- Order
-
-Services
-- CRUD operations
-- Find by parameters
-
-Special services
-- Authentication
-- Adding 'Salt' to password
-- Hashing password
-
-### Project has 2-tier architecture
-
-- Service layer
-- Data access object layer
-
-### Database structure
-![diagram](Hibernate_Cinema_Uml.png)
-
-### Technologies used in project
-
-- Java v.11
-- Hibernate v.5.4.21.Final
-- MySQL v.8.0
-- Maven v.3.8.5
-
-### To run project you should
-
-1. Install MySQL, Git, Maven, Java
-2. Clone the project from GitHub
-3. Initialise hibernate: configure file /src/resources/hibernate.cfg.xml
-4. Set URL, USERNAME, PASSWORD, JDBC_DRIVER in /src/resources/hibernate.cfg.xml
-5. Add schema "cinema" into DB;
-6. Run project
+# Cinema-service### OverviewThe web project (back end part) of cinema app. Implemented all basic operations of ordering tickets to the cinema.### Project descriptionThe project was made to show all basic technologies in one place. Creating Data Base and connected to project. Uses hibernate to create Entity, store and manipulate them. Shown all types of relations of Entity. Added web Spring Framework and implemented controllers to manipulate all operations through the internet by HTTP request.Project has structure:Entity- Movie- Cinema- MovieSession- Ticket- User- Shopping cart- OrderServices- CRUD operations- Find by parameters- Response objects by JSON formatSpecial services- Authentication by login### Project has 3-tier architectureOnly back end part was implemented, all response by JSON object- Controllers- Service layer- Data access object layer### Database structure![diagram](Hibernate_Cinema_Uml.png)### Technologies used in project- Spring WEB 5.2.2- Spring core 5.2.2- Spring security 5.2.2- Java v.11- Hibernate v.5.4.21.Final- Apache Tomcat v.9.0.64- Java Servlet v.4.0.1- MySQL v.8.0- Maven v.3.8.5- JSON### To run project you should1. Install MySQL, Apache Tomcat (v 9.0.64), Git, Maven, Java2. Clone the project from GitHub3. Configure Apache TomcatInstall MySQL, Git, Maven, Java4. Initialise spring DB.PROPERTIES: configure file /src/resources/db.properties5. Set URL, USERNAME, PASSWORD, JDBC_DRIVER in /src/resources/db.properties6. Run project7. Use standard parameters for input: 8. login:admin@i.ua9. password: admin123
